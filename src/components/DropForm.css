@@ -1,0 +1,10 @@
+p {
+    border: 1px solid red;
+}
+.uploads {
+    width: 100%;
+    border: 1px dashed black;
+}
+input[type="text"]:disabled {
+    background-color: red;
+}
