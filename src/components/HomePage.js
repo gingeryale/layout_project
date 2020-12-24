@@ -27,19 +27,19 @@ function HomePage() {
                         <div className="roles_artists producers">
                             <div className="roles_wrapper">
                                 <h3>Producers</h3>
-                                <p><span>Geva Alon</span> Rock-folk artist</p>
+                                <p><span>Kick Lee</span> Composer-Producer</p>
                             </div>
                         </div>
                         <div className="roles_artists composers">
                             <div className="roles_wrapper">
                                 <h3>Composers</h3>
-                                <p><span>Geva Alon</span> Rock-folk artist</p>
+                                <p><span>Vlad Morleo</span> Classical piano composer</p>
                             </div>
                         </div>
                         <div className="roles_artists agents">
                             <div className="roles_wrapper">
                                 <h3>Agents</h3>
-                                <p><span>Geva Alon</span> Rock-folk artist</p>
+                                <p><span>Davis Absolute</span> Agent</p>
                             </div>
                         </div>
                     </div>
@@ -84,12 +84,15 @@ function HomePage() {
                 <div className="submissions">
                     <div className="wrapper">
                         <div className="text">
-                            <h2>Things to check before we start</h2>
+                            <h2>Things to check<br /> before we start</h2>
                             <button>Start Now</button>
                         </div>
                     </div>
                 </div>
             </main>
+            <footer>
+                <p>artist@artlist.io</p>
+            </footer>
         </>
     )
 }

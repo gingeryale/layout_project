@@ -156,7 +156,7 @@ main .roles_rights .wrapper .box {
 
 main .roles_rights .wrapper .box h3 {
     color: var(--yellow);
-    font-variant: 700;
+    font-weight: 700;
     font-size: 2rem;
     line-height: 2.34rem;
     margin-bottom: 1.3rem;
@@ -169,23 +169,46 @@ main .roles_rights .wrapper .box p {
 .submissions {
     height: 76.6rem;
     background-image: url("../images/17eb6f570029ff7241aaac10e4d628a25fe936bb.png");
+    background-repeat: no-repeat;
+    background-color: var(--purple);
 }
 
 .submissions .wrapper {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 50%;
-    outline: 1px solid var(--yellow);
-    height: 100%;
+    height: inherit;
 }
 
 .submissions .text {
-    outline: 2px dashed var(--yellow);
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    position: relative;
+    left: 21.4rem;
+    top: 11rem;
 }
 
-.submissions .wrapper .text > h2 {
-    align-content: left;
+.submissions .wrapper .text h2 {
+    text-align: left;
+}
+
+button {
+    position: relative;
+    width: 17rem;
+    height: 5.4rem;
+    left: 0;
+    top: 14rem;
+    border-radius: 5rem;
+    background-color: var(--yellow);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+footer {
+    height: 8.4rem;
+    background-color: var(--dark);
+}
+
+footer p {
+    padding: 3.4rem;
+    display: block;
+    margin-left: 34rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
