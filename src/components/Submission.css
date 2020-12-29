@@ -1,0 +1,109 @@
+.panel_2 {
+    display: flex;
+    margin-top: 10%;
+}
+.panel {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.panel:nth-of-type(2) {
+    margin-top: 6rem;
+}
+.panel h1.header {
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+.fieldWrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.4rem;
+}
+.fieldWrap label {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+    margin: -1rem 0 0 1.4rem;
+    width: max-content;
+    cursor: text;
+    background-color: var(--dark);
+    padding: 5px;
+}
+
+.fieldWrap input {
+    position: relative;
+    transition: all 0.2s;
+    width: 36rem;
+    border: 1px solid rgba(var(--silver), 0.7);
+    border-radius: 4px;
+    height: 4.8rem;
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: var(--font_size);
+    padding: 1rem;
+}
+.fieldWrap input[type="textarea"] {
+    height: 9.6rem;
+}
+.fieldWrap input::placeholder {
+    color: var(--white);
+    opacity: 1;
+    font-size: var(--font_size);
+}
+.fieldWrap input:focus {
+    border: 1px solid var(--yellow);
+    outline: none;
+}
+.fieldWrap input:focus::placeholder {
+    display: none;
+}
+
+.fieldWrap input:focus + label {
+    font-size: 2rem;
+}
+.fieldWrap.radioBtn {
+    display: flex;
+    flex-direction: row;
+    height: 1.6rem;
+    justify-content: space-between;
+    width: 36rem;
+}
+.fieldWrap p {
+    margin-left: 0;
+    font-size: var(--font_size);
+    display: inline;
+    margin-right: 4.5rem;
+    position: relative;
+}
+.radioSpan {
+    display: flex;
+    justify-content: flex-end;
+    width: 5rem;
+    margin-top: -5px;
+}
+.fieldWrap .radioSpan input[type="radio"] {
+    width: auto;
+    height: 2rem;
+    margin: 1px 3.3rem;
+    background-color: var(--dark);
+}
+.fieldWrap .radioSpan input[type="radio"] + label {
+    margin: 0;
+    z-index: -1;
+    font-size: var(--font_size);
+}
+
+@media only screen and (max-width: 900px) {
+    .panel_2 {
+        display: block;
+    }
+    .panel:nth-of-type(2) {
+        margin-top: 2rem;
+    }
+}

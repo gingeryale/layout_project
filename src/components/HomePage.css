@@ -49,7 +49,6 @@ main {
     background-image: linear-gradient(to bottom, #171717, #171717 35%, transparent 60%),
         url("../images/996c334b46914bacc3cf4a403b51c4c3e8368be8.png");
     background-repeat: no-repeat;
-    background-color: var(--dark);
     background-size: contain;
     background-position: 0% 45%;
     height: auto;
@@ -186,18 +185,6 @@ main .roles_rights .wrapper .box p {
 
 .submissions .wrapper .text h2 {
     text-align: left;
-}
-
-button {
-    position: relative;
-    width: 17rem;
-    height: 5.4rem;
-    left: 0;
-    top: 14rem;
-    border-radius: 5rem;
-    background-color: var(--yellow);
-    font-weight: 500;
-    font-size: 2rem;
 }
 
 footer {

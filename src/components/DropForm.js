@@ -28,32 +28,44 @@ function DropForm() {
     }
 
     const files = myFiles.slice(0, limitFile).map(file => (
-        <li key={file.path}>
-            {file.path} - {file.size} bytes{" "}
-            <button onClick={removeFile(file)}>Remove File</button>
+        <li className="file" key={file.path}>
+            {file.path}
+            <span className="removeBtn" onClick={removeFile(file)}>remove</span>
         </li>
     ));
 
     const limitMsg = () => {
-        console.log("limit");
         disabled = true;
         uploadMsg = `You've reached the limit of uploads`;
     }
 
     return (
-        <section className="container">
-            <aside>
-                <h4>Files</h4>
-                <ul>{files}</ul>
-                {files.length >= limitFile && limitMsg()}
-            </aside>
-            <div>
-                {files.length > 0 && <button onClick={removeAll}>Remove All</button>}
+        <section className="dragDrop">
+            <div className="header">Upload music <span>4-6 songs</span></div>
+            <div className="flexWrap">
+                <article>
+                    <ul>{files}</ul>
+                    {files.length >= limitFile && limitMsg()}
+                </article>
+                <div {...getRootProps({ className: "dropzone" })}>
+                    <input disabled={disabled} {...getInputProps()} />
+                    <p className="dzone">{uploadMsg}</p>
+                </div>
             </div>
-            <div {...getRootProps({ className: "dropzone" })}>
-                <input disabled={disabled} {...getInputProps()} />
-                <p>{uploadMsg}</p>
-            </div>
+            <form>
+                <div className="checkWrap">
+                    <input type="checkbox" id="rights" name="rights" value="rights" />
+                    <label for="rights"> I have full rights for the music.</label>
+                </div>
+                <div className="checkWrap">
+                    <input type="checkbox" id="original" name="original" value="original" />
+                    <label for="original"> None of the songs are a cover of another artis's material.</label>
+                </div>
+                <div className="checkWrap">
+                    <input type="checkbox" id="platform" name="platform" value="original" />
+                    <label for="platform"> The music is clear for use in any web platform, including YouTube monetization.</label>
+                </div>
+            </form>
         </section>
     )
 }
