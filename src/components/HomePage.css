@@ -1,7 +1,7 @@
 header {
     background-image: url(../images/32d3f354b797b9b45ffbcc07530cfd2cfebead22.png);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 108rem;
     background-size: cover;
     background-position: top;
     position: relative;
@@ -79,7 +79,7 @@ main .roles_artists {
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: end;
+    align-items: flex-end;
 }
 
 main .roles_artists:not(:first-of-type) {
@@ -136,32 +136,32 @@ main .roles_rights {
     margin: 0 auto;
 }
 
-main .roles_rights .wrapper {
+main .roles_rights .rights_wrapper {
     min-height: 24.2rem;
 }
 
-main .roles_rights .wrapper .set_a,
-main .roles_rights .wrapper .set_b {
+main .roles_rights .rights_wrapper .set_a,
+main .roles_rights .rights_wrapper .set_b {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-main .roles_rights .wrapper .set_a {
+main .roles_rights .rights_wrapper .set_a {
     padding-bottom: 7rem;
 }
 
-main .roles_rights .wrapper .box {
+main .roles_rights .rights_wrapper .box {
     width: 27%;
 }
 
-main .roles_rights .wrapper .box h3 {
+main .roles_rights .rights_wrapper .box h3 {
     color: var(--yellow);
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.34rem;
     margin-bottom: 1.3rem;
 }
-main .roles_rights .wrapper .box p {
+main .roles_rights .rights_wrapper .box p {
     font-size: 1.7rem;
     line-height: 2rem;
     font-weight: 400;
@@ -173,7 +173,7 @@ main .roles_rights .wrapper .box p {
     background-color: var(--purple);
 }
 
-.submissions .wrapper {
+.submissions .submit_wrapper {
     height: inherit;
 }
 
@@ -184,7 +184,7 @@ main .roles_rights .wrapper .box p {
     top: 11rem;
 }
 
-.submissions .wrapper .text h2 {
+.submissions .submit_wrapper .text h2 {
     text-align: left;
 }
 

@@ -48,7 +48,7 @@ function HomePage() {
                 <div className="info">
                     <h2>Keep doing your thing</h2>
                     <div className="roles_rights">
-                        <div className="wrapper">
+                        <div className="rights_wrapper">
                             <div className="set_a">
                                 <div className="box">
                                     <h3>Keep your rights</h3>
@@ -82,7 +82,7 @@ function HomePage() {
                 </div>
 
                 <div className="submissions">
-                    <div className="wrapper">
+                    <div className="submit_wrapper">
                         <div className="text">
                             <h2>Things to check<br /> before we start</h2>
                             <button>Start Now</button>
