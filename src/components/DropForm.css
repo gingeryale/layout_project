@@ -39,9 +39,12 @@
     font-size: 2rem;
     outline: none;
 }
+input:disabled {
+    display: none;
+}
 
-.dragDrop .dzone input:disabled {
-    height: auto;
+input:disabled + .dzone {
+    display: none;
 }
 
 li.file {

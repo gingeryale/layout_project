@@ -21,16 +21,26 @@
 }
 .panel .headline {
     position: relative;
-    width: 36rem;
+    width: 42.9rem;
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 2rem;
 }
+.innerForm {
+    height: 50rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 42.9rem;
+}
 .fieldWrap {
     display: flex;
     flex-direction: column;
     padding-bottom: 2.4rem;
+    position: relative;
 }
 .fieldWrap input:placeholder-shown + label,
 .fieldWrap textarea:placeholder-shown + label {
@@ -193,9 +203,32 @@ textarea {
     }
     .panel {
         width: 100%;
-        height: 100%;
     }
     .panel:nth-of-type(2) {
         padding-top: 4rem;
     }
+}
+
+/* Scroll Bar */
+/* width */
+.panel ::-webkit-scrollbar {
+    width: 3px;
+    height: 110px;
+    border-radius: 4px;
+}
+
+/* Track */
+.panel ::-webkit-scrollbar-track {
+    background: var(--yellow);
+}
+
+/* Handle */
+.panel ::-webkit-scrollbar-thumb {
+    background: #828282;
+    width: 1px;
+}
+
+/* Handle on hover */
+.panel ::-webkit-scrollbar-thumb:hover {
+    background: #828282;
 }
