@@ -8,7 +8,7 @@ function Submission() {
         <>
             <div className="panel_2">
                 <div className="panel">
-                    <h1 className="header">Submit your music</h1>
+                    <h1 className="headline">Submit your music</h1>
                     <div className="fieldWrap">
                         <input name="fullName" type="text" placeholder="Full name" />
                         <label for="FullName">Full name</label>
