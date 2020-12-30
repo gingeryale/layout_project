@@ -66,6 +66,9 @@ function DropForm() {
                     <label for="platform"> The music is clear for use in any web platform, including YouTube monetization.</label>
                 </div>
             </form>
+            <div className="submit_btn">
+                <button>Submit</button>
+            </div>
         </section>
     )
 }
