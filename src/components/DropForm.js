@@ -41,13 +41,13 @@ function DropForm() {
 
     return (
         <section className="dragDrop">
-            <div className="header">Upload music <span>4-6 songs</span></div>
+            <div className="dropHeader">Upload music <span>4-6 songs</span></div>
             <div className="flexWrap">
                 <article>
                     <ul>{files}</ul>
                     {files.length >= limitFile && limitMsg()}
                 </article>
-                <div {...getRootProps({ className: "dropzone" })}>
+                <div {...getRootProps({ className: "dropZone" })}>
                     <input disabled={disabled} {...getInputProps()} />
                     <p className="dzone">{uploadMsg}</p>
                 </div>

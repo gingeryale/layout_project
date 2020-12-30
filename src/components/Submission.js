@@ -36,16 +36,20 @@ function Submission() {
                         <input name="portfolio" type="text" placeholder="portfolio links" />
                         <label for="portfolio">Portfolio links</label>
                     </div>
-                    <div className="fieldWrap radioBtn">
+                    <div className="fieldWrap radio_group">
                         <p for="pro">Are you registered with a PRO?</p>
-                        <span className="radioSpan">
-                            <label for="yes">Yes</label>
-                            <input type="radio" id="pro" name="pro" value="yes" />
-                        </span>
-                        <span className="radioSpan">
-                            <label for="nopro">No</label>
-                            <input type="radio" id="nopro" name="pro" value="no" />
-                        </span>
+                        <div class="radioBtn_wrapper">
+                            <div class="radioSpan">
+                                <input type="radio" class="radio_input" id="yes" name="pro" />
+                                <label for="yes" class="radio_label">
+                                    <span class="radio_btn"></span>Yes</label>
+                            </div>
+                            <div class="radioSpan">
+                                <input type="radio" class="radio_input" id="no" name="pro" />
+                                <label for="no" class="radio_label">
+                                    <span class="radio_btn"></span>No</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="panel">

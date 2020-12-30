@@ -1,13 +1,13 @@
 .dragDrop {
     width: 49.1rem;
 }
-.dragDrop .header {
+.dragDrop .dropHeader {
     font-size: 1.8rem;
     font-weight: 501;
     line-height: 2.2rem;
     margin-bottom: 1.5rem;
 }
-.dragDrop .header span {
+.dragDrop .dropHeader span {
     color: var(--grey);
     font-weight: 300;
     font-size: 1.6rem;
@@ -17,21 +17,31 @@
     flex-direction: column;
     height: 100%;
     max-height: 30.8rem;
-    border-top: 1px solid var(--grey);
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
 }
-.dragDrop .dzone {
-    margin-top: 1.4rem;
+.dropZone {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex: 1 1 auto;
     border: 1px dashed var(--white);
-    height: 21.1rem;
+}
+.dzone {
+    margin: 1.4rem auto;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
+    outline: none;
 }
 
 .dragDrop .dzone input:disabled {
-    height: 3rem;
+    height: auto;
 }
 
 li.file {
@@ -43,9 +53,13 @@ li.file {
     justify-content: space-between;
 }
 li.file:first-of-type {
-    margin-top: 2.4rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid var(--grey);
 }
-
+li.file:last-of-type {
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid var(--grey);
+}
 li.file span {
     font-size: 1.2rem;
     color: var(--grey);
