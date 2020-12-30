@@ -171,6 +171,7 @@ main .roles_rights .rights_wrapper .box p {
     background-image: url("../images/17eb6f570029ff7241aaac10e4d628a25fe936bb.png");
     background-repeat: no-repeat;
     background-color: var(--purple);
+    background-size: contain;
 }
 
 .submissions .submit_wrapper {
@@ -181,7 +182,7 @@ main .roles_rights .rights_wrapper .box p {
     display: inline-block;
     position: relative;
     left: 21.4rem;
-    top: 11rem;
+    top: 3.5rem;
 }
 
 .submissions .submit_wrapper .text h2 {
