@@ -51,6 +51,10 @@ function Submission() {
                             </div>
                         </div>
                     </div>
+                    <div className="fieldWrap">
+                        <input name="proName" type="text" placeholder="Name of the Pro" />
+                        <label for="portfolio">Name of the Pro</label>
+                    </div>
                 </div>
                 <div className="panel">
                     <DropForm />

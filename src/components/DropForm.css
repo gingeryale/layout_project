@@ -15,7 +15,7 @@
 .flexWrap {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 21.1rem;
     max-height: 30.8rem;
     justify-content: flex-start;
     align-items: stretch;
