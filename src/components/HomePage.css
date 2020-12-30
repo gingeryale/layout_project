@@ -52,6 +52,7 @@ main {
     background-size: contain;
     background-position: 0% 45%;
     height: auto;
+    background-color: var(--dark);
 }
 
 main .artists {

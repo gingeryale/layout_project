@@ -1,19 +1,24 @@
 .panel_2 {
     display: flex;
-    margin-top: 10%;
 }
 .panel {
-    max-width: 50%;
+    padding-top: 5%;
+    width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.panel:nth-of-type(2) {
-    margin-top: 6rem;
+.panel:first-of-type {
+    background-color: rgba(23, 23, 23, 0.9);
 }
-.panel h1.header {
-    width: 100%;
+.panel:nth-of-type(2) {
+    padding-top: 20rem;
+    background-color: var(--dark);
+}
+.panel .header {
+    width: 50%;
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 4.5rem;
@@ -24,19 +29,22 @@
     flex-direction: column;
     padding-bottom: 2.4rem;
 }
-.fieldWrap label {
+.fieldWrap input:placeholder-shown + label,
+.fieldWrap textarea:placeholder-shown + label {
     color: white;
-    font-size: 1rem;
+    font-size: 1.4rem;
     position: absolute;
     z-index: 1;
-    margin: -1rem 0 0 1.4rem;
+    margin: 1.4rem 1.2rem;
     width: max-content;
     cursor: text;
     background-color: var(--dark);
     padding: 5px;
+    transition: all 0.2s ease-in;
 }
 
-.fieldWrap input {
+.fieldWrap input,
+textarea {
     position: relative;
     transition: all 0.2s;
     width: 36rem;
@@ -47,25 +55,72 @@
     color: var(--white);
     font-size: var(--font_size);
     padding: 1rem;
+    outline: none;
 }
-.fieldWrap input[type="textarea"] {
+.fieldWrap textarea {
     height: 9.6rem;
+    resize: none;
+    overflow: auto;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    font-family: inherit;
+    font-size: 1.4rem;
 }
-.fieldWrap input::placeholder {
-    color: var(--white);
-    opacity: 1;
-    font-size: var(--font_size);
-}
-.fieldWrap input:focus {
+
+.fieldWrap input:focus,
+.fieldWrap textarea:focus {
     border: 1px solid var(--yellow);
     outline: none;
 }
-.fieldWrap input:focus::placeholder {
-    display: none;
+.fieldWrap input:focus + label,
+.fieldWrap input:active + label,
+.fieldWrap input:not(:placeholder-shown) + label,
+.fieldWrap textarea:focus + label,
+.fieldWrap textarea:active + label,
+.fieldWrap textarea:not(:placeholder-shown) + label {
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+    margin: -1rem 0 0 1.4rem;
+    width: max-content;
+    background-color: var(--dark);
+    padding: 5px;
 }
-
-.fieldWrap input:focus + label {
-    font-size: 2rem;
+.tooltip {
+    /* visibility: hidden; */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.tooltip .bio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--dark);
+    width: 20.7rem;
+    min-height: 11.9rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    z-index: 1;
+    margin-right: -5rem;
+    padding: 1.7rem 1.35rem 1.7rem 1.95rem;
+    border-radius: 6px;
+}
+.tooltip p::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-right: 1rem solid var(--dark);
+}
+.fieldWrap textarea:hover .tooltip {
+    border: 10px solid white;
 }
 .fieldWrap.radioBtn {
     display: flex;
@@ -87,13 +142,13 @@
     width: 5rem;
     margin-top: -5px;
 }
-.fieldWrap .radioSpan input[type="radio"] {
+.radioSpan input[type="radio"] {
     width: auto;
     height: 2rem;
     margin: 1px 3.3rem;
     background-color: var(--dark);
 }
-.fieldWrap .radioSpan input[type="radio"] + label {
+.radioSpan label {
     margin: 0;
     z-index: -1;
     font-size: var(--font_size);
