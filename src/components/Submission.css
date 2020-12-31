@@ -179,8 +179,8 @@ textarea {
 }
 .radio_btn::after {
     content: "";
-    height: 0.6rem;
-    width: 0.6rem;
+    height: 6px;
+    width: 6px;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -188,15 +188,27 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--yellow);
-
+    border: none;
     opacity: 0;
-    transition: opcaity 0.2s;
+    transition: opcaity 0.4s ease-in;
 }
-.radio_input:checked ~ .radio_btn::after {
-    border: 1px solid var(--yellow);
-    width: 1.9rem;
-    height: 1.9rem;
+
+.radio_input:checked ~ .radio_label .radio_btn::before {
+    content: "";
+    height: 19px;
+    width: 19px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    opacity: 1;
+    transition: opcaity 0.4s ease-in;
 }
+
 .radio_input:checked ~ .radio_label .radio_btn::after {
     opacity: 1;
 }
