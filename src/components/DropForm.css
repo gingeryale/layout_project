@@ -1,18 +1,18 @@
-.dragDrop {
+.drag_drop_form {
     width: 49.1rem;
 }
-.dragDrop .dropHeader {
+.drag_drop_form .drag_drop_header {
     font-size: 1.8rem;
     font-weight: 501;
     line-height: 2.2rem;
     margin-bottom: 1.5rem;
 }
-.dragDrop .dropHeader span {
+.drag_drop_form .drag_drop_header span {
     color: var(--grey);
     font-weight: 300;
     font-size: 1.6rem;
 }
-.flexWrap {
+.flex_height_wrap {
     display: flex;
     flex-direction: column;
     min-height: 21.1rem;
@@ -21,7 +21,7 @@
     align-items: stretch;
     align-content: stretch;
 }
-.dropZone {
+.drop_zone {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
@@ -29,7 +29,7 @@
     flex: 1 1 auto;
     border: 1px dashed var(--white);
 }
-.dzone {
+.drop_zone_msg {
     margin: 1.4rem auto;
     height: auto;
     display: flex;
@@ -43,11 +43,11 @@ input:disabled {
     display: none;
 }
 
-input:disabled + .dzone {
+input:disabled + .drop_zone_msg {
     display: none;
 }
 
-.dropZone + input:disabled {
+.drop_zone + input:disabled {
     display: none;
 }
 
@@ -72,18 +72,18 @@ li.file span {
     color: var(--grey);
 }
 
-.dragDrop form {
+.drag_drop_form form {
     position: relative;
     width: 49.1rem;
     height: 7.2rem;
     padding-top: 3rem;
 }
 
-.dragDrop .checkWrap {
+.drag_drop_form .checkbox_item {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
-.checkWrap input[type="checkbox"] {
+.checkbox_item input[type="checkbox"] {
     margin-right: 1.8rem;
 }
 

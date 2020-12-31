@@ -41,36 +41,36 @@ function DropForm() {
     }
 
     return (
-        <section className="dragDrop">
-            <div className="dropHeader">Upload music <span>4-6 songs</span></div>
-            <div className="flexWrap">
+        <section className="drag_drop_form">
+            <div className="drag_drop_header">Upload music <span>4-6 songs</span></div>
+            <div className="flex_height_wrap">
                 <article>
                     <ul>{files}</ul>
                     {files.length >= limitFile && limitMsg()}
                 </article>
-                <div {...getRootProps({ className: "dropZone" })}>
+                <div {...getRootProps({ className: "drop_zone" })}>
                     <input disabled={disabled} {...getInputProps()} />
-                    <p className="dzone">{uploadMsg}</p>
+                    <p className="drop_zone_msg">{uploadMsg}</p>
                 </div>
             </div>
             <form>
-                <div class="checkWrap">
+                <div class="checkbox_item">
                     <input type="checkbox" id="rights" class="visually-hidden" />
                     <label for="rights">I have full rights for the music.</label>
 
-                    <div class="control-me"></div>
+                    <div class="control_box"></div>
                 </div>
-                <div class="checkWrap">
+                <div class="checkbox_item">
                     <input type="checkbox" id="material" class="visually-hidden" />
                     <label for="material">None of the songs are a cover of another artis's material.</label>
 
-                    <div class="control-me"></div>
+                    <div class="control_box"></div>
                 </div>
-                <div class="checkWrap">
+                <div class="checkbox_item">
                     <input type="checkbox" id="platform" class="visually-hidden" />
                     <label for="platform">The music is clear for use in any web platform, including YouTube monetization.</label>
 
-                    <div class="control-me"></div>
+                    <div class="control_box"></div>
                 </div>
             </form >
             <div className="submit_btn">

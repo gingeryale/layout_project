@@ -1,10 +1,10 @@
 /* Chris Coyier Checkbox hack */
 
-.checkWrap {
+.checkbox_item {
     display: block;
     position: relative;
 }
-.control-me::after {
+.control_box::after {
     content: "";
     font-size: 25px;
     width: 11px;
@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
 }
-.checkWrap input:checked ~ .control-me::after {
+.checkbox_item input:checked ~ .control_box::after {
     content: "";
     width: 11px;
     height: 11px;

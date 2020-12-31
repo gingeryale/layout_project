@@ -30,7 +30,7 @@
     line-height: 4.5rem;
     margin-bottom: 2rem;
 }
-.innerForm {
+.inner_form {
     height: 50.8rem;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -40,19 +40,19 @@
     width: 42.9rem;
     padding-top: 0.8rem;
 }
-.fieldWrap {
+.form_item {
     display: flex;
     flex-direction: column;
     padding-bottom: 2.4rem;
     position: relative;
 }
-.fieldWrap input:placeholder-shown + label,
-.fieldWrap textarea:placeholder-shown + label {
+.form_item input:placeholder-shown + label,
+.form_item textarea:placeholder-shown + label {
     color: white;
     font-size: 1.4rem;
     position: absolute;
     z-index: 1;
-    margin: 1.4rem 1.2rem;
+    margin: 1.4rem 1rem;
     width: max-content;
     cursor: text;
     background-color: var(--darkAlpha);
@@ -60,7 +60,7 @@
     transition: all 0.2s ease-in;
 }
 
-.fieldWrap input[type="text"],
+.form_item input[type="text"],
 textarea {
     position: relative;
     transition: all 0.2s;
@@ -74,7 +74,7 @@ textarea {
     padding: 1rem;
     outline: none;
 }
-.fieldWrap textarea {
+.form_item textarea {
     height: 9.6rem;
     resize: none;
     overflow: auto;
@@ -84,17 +84,17 @@ textarea {
     font-size: 1.4rem;
 }
 
-.fieldWrap input:focus,
-.fieldWrap textarea:focus {
+.form_item input:focus,
+.form_item textarea:focus {
     border: 1px solid var(--yellow);
     outline: none;
 }
-.fieldWrap input:focus + label,
-.fieldWrap input:active + label,
-.fieldWrap input:not(:placeholder-shown) + label,
-.fieldWrap textarea:focus + label,
-.fieldWrap textarea:active + label,
-.fieldWrap textarea:not(:placeholder-shown) + label {
+.form_item input:focus + label,
+.form_item input:active + label,
+.form_item input:not(:placeholder-shown) + label,
+.form_item textarea:focus + label,
+.form_item textarea:active + label,
+.form_item textarea:not(:placeholder-shown) + label {
     font-size: 1rem;
     position: absolute;
     z-index: 1;
@@ -136,7 +136,7 @@ textarea {
     border-bottom: 1rem solid transparent;
     border-right: 1rem solid var(--dark);
 }
-.fieldWrap.radio_group {
+.form_item.radio_group {
     display: flex;
     flex-direction: row;
     height: 1.6rem;
@@ -144,24 +144,24 @@ textarea {
     width: 36rem;
     margin-bottom: 1.8rem;
 }
-.fieldWrap.radio_group .radio_label {
+.form_item.radio_group .radio_label {
     background-color: transparent;
     font-size: 1.4rem;
     cursor: pointer;
     position: relative;
     padding-right: 0;
 }
-.fieldWrap.radio_group input[type="radio"] {
+.form_item.radio_group input[type="radio"] {
     display: none;
 }
-.fieldWrap p {
+.form_item p {
     margin-left: 0;
     font-size: var(--font_size);
     display: inline;
     margin-right: 4.5rem;
     position: relative;
 }
-.radioSpan {
+.radio_item {
     display: inline-flex;
     justify-content: flex-end;
     width: 5rem;
@@ -241,11 +241,11 @@ textarea {
 
 /* Handle */
 .panel ::-webkit-scrollbar-thumb {
-    background: #828282;
+    background: var(--grey2);
     width: 1px;
 }
 
 /* Handle on hover */
 .panel ::-webkit-scrollbar-thumb:hover {
-    background: #828282;
+    background: var(--grey2);
 }
