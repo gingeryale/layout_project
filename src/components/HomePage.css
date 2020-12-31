@@ -59,11 +59,11 @@ main .artists {
     position: relative;
     z-index: 3;
 }
-main h2 {
+main .artists h2,
+main .info h2 {
     padding-top: 12.9rem;
     font-size: 5rem;
     text-align: center;
-    padding-bottom: 6.2rem;
 }
 
 main .roles {
@@ -168,6 +168,7 @@ main .roles_rights .rights_wrapper .box p {
     background-repeat: no-repeat;
     background-color: var(--purple);
     background-size: contain;
+    background-position: center;
 }
 
 .submissions .submit_wrapper {
@@ -177,12 +178,19 @@ main .roles_rights .rights_wrapper .box p {
 .submissions .text {
     display: inline-block;
     position: relative;
-    left: 21.4rem;
-    top: 3.5rem;
+    left: 21.5rem;
+    top: 21.2rem;
+    padding-bottom: 18.1rem;
 }
 
 .submissions .submit_wrapper .text h2 {
     text-align: left;
+    font-size: 6rem;
+    font-weight: 700;
+}
+.submissions .submit_wrapper .text button {
+    left: 0;
+    top: 13.75rem;
 }
 
 footer {

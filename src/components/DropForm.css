@@ -91,3 +91,7 @@ li.file span {
     display: flex;
     justify-content: center;
 }
+
+.submit_btn button {
+    top: 8.6rem;
+}
