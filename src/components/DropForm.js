@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import "./DropForm.css";
+import "./Checkbox.css";
 
 function DropForm() {
     const [myFiles, setMyFiles] = useState([]);
@@ -53,23 +54,29 @@ function DropForm() {
                 </div>
             </div>
             <form>
-                <div className="checkWrap">
-                    <input type="checkbox" id="rights" name="rights" value="rights" />
-                    <label for="rights"> I have full rights for the music.</label>
+                <div class="checkWrap">
+                    <input type="checkbox" id="rights" class="visually-hidden" />
+                    <label for="rights">I have full rights for the music.</label>
+
+                    <div class="control-me"></div>
                 </div>
-                <div className="checkWrap">
-                    <input type="checkbox" id="original" name="original" value="original" />
-                    <label for="original"> None of the songs are a cover of another artis's material.</label>
+                <div class="checkWrap">
+                    <input type="checkbox" id="material" class="visually-hidden" />
+                    <label for="material">None of the songs are a cover of another artis's material.</label>
+
+                    <div class="control-me"></div>
                 </div>
-                <div className="checkWrap">
-                    <input type="checkbox" id="platform" name="platform" value="original" />
-                    <label for="platform"> The music is clear for use in any web platform, including YouTube monetization.</label>
+                <div class="checkWrap">
+                    <input type="checkbox" id="platform" class="visually-hidden" />
+                    <label for="platform">The music is clear for use in any web platform, including YouTube monetization.</label>
+
+                    <div class="control-me"></div>
                 </div>
-            </form>
+            </form >
             <div className="submit_btn">
                 <button>Submit</button>
             </div>
-        </section>
+        </section >
     )
 }
 

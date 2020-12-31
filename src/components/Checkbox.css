@@ -1,0 +1,37 @@
+/* Chris Coyier Checkbox hack */
+
+.checkWrap {
+    display: block;
+    position: relative;
+}
+.control-me::after {
+    content: "";
+    font-size: 25px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid var(--grey);
+    position: absolute;
+    border-radius: 1px;
+    top: 0;
+    left: 0;
+}
+.checkWrap input:checked ~ .control-me::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: var(--grey);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3.2rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
