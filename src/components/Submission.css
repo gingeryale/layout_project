@@ -43,7 +43,7 @@
 .form_item {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2.4rem;
+    margin-bottom: 2.4rem;
     position: relative;
 }
 .form_item input:placeholder-shown + label,
@@ -59,7 +59,43 @@
     padding: 5px;
     transition: all 0.2s ease-in;
 }
-
+.dropdown_select {
+    background-color: var(--dark);
+    width: 36rem;
+    height: 13.6rem;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    overflow: scroll;
+    /* display: none; */
+    transform: translateY(-3rem);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    z-index: -1;
+}
+.form_item input:focus ~ .dropdown_select,
+.form_item input:active ~ .dropdown_select,
+.form_item input:not(:placeholder-shown) ~ .dropdown_select,
+.form_item textarea:focus ~ .dropdown_select,
+.form_item textarea:active ~ .dropdown_select,
+.form_item textarea:not(:placeholder-shown) ~ .dropdown_select {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+}
+.dropdown_list:first-of-type {
+    padding-top: 2.4rem;
+}
+.dropdown_list {
+    font-size: 1.4rem;
+    padding: 2rem 0 0.5rem 1.6rem;
+    list-style-type: none;
+    color: var(--grey);
+}
+.dropdown_list:hover {
+    color: var(--white);
+}
 .form_item input[type="text"],
 textarea {
     position: relative;
@@ -74,6 +110,7 @@ textarea {
     padding: 1rem;
     outline: none;
 }
+
 .form_item textarea {
     height: 9.6rem;
     resize: none;
@@ -102,6 +139,7 @@ textarea {
     width: max-content;
     background-color: var(--darkAlpha);
     padding: 5px;
+    color: var(--yellow);
 }
 .tooltip {
     visibility: hidden;

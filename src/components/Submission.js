@@ -18,10 +18,18 @@ function Submission() {
                             <input name="email" type="text" placeholder="Email" />
                             <label for="email">Email</label>
                         </div>
-                        <div className="form_item">
-                            <input name="country" type="text" placeholder="Country" />
+
+                        <div className="form_item country">
+                            <input name="country" type="text" placeholder="Country2" />
                             <label for="country">Country</label>
+                            <ul className="dropdown_select">
+                                <li className="dropdown_list" data-country="is">Iran</li>
+                                <li className="dropdown_list" data-country="ir">Ireland</li>
+                                <li className="dropdown_list" data-country="il">Israel</li>
+                                <li className="dropdown_list" data-country="it">Italy</li>
+                            </ul>
                         </div>
+
                         <div className="tooltip">
                             <p className="bio">Let us know who you are and where you’re coming from, what inspires you, who you have worked with and what you think is interesting about your work in the world of music and film, etc.  How should we present you as an artist? </p>
                         </div>
