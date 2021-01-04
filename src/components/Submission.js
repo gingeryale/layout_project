@@ -20,7 +20,7 @@ function Submission() {
                         </div>
 
                         <div className="form_item country">
-                            <input name="country" type="text" placeholder="Country2" />
+                            <input name="country" type="text" placeholder="Country" />
                             <label for="country">Country</label>
                             <ul className="dropdown_select">
                                 <li className="dropdown_list" data-country="is">Iran</li>
