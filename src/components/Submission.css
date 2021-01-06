@@ -185,6 +185,7 @@ textarea {
     cursor: pointer;
     position: relative;
     padding-right: 0;
+    color: inherit;
 }
 .form_item.radio_group input[type="radio"] {
     display: none;
