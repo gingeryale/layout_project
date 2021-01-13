@@ -53,10 +53,10 @@
     position: absolute;
     z-index: 1;
     margin: 1.4rem 1rem;
-    width: max-content;
+    width: auto;
     cursor: text;
     background-color: var(--darkAlpha);
-    padding: 5px;
+    padding: 1px 5px 0;
     transition: all 0.2s ease-in;
 }
 .dropdown_select {
@@ -133,7 +133,6 @@ textarea {
     position: absolute;
     z-index: 1;
     margin: -1rem 0 0 1.4rem;
-    width: max-content;
     background-color: var(--darkAlpha);
     padding: 5px;
     color: var(--yellow);
